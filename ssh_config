@@ -1,4 +1,4 @@
-ssh через туннель
+ssh в Mac OS X через туннель
 
 Ставим MacPorts, если не установлен
 Ставим corkscrew: 
@@ -12,3 +12,5 @@ Host github.com
         ProxyCommand corkscrew 192.168.150.1 3128 %h %p
 
 192.168.150.1 3128 - настройка местной прокси
+
+http://www.mtu.net/~engstrom/ssh-proxy.php
