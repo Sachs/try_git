@@ -13,4 +13,7 @@ Host github.com
 
 192.168.150.1 3128 - настройка местной прокси
 
-http://www.mtu.net/~engstrom/ssh-proxy.php
+Вариант 2 (через nc)
+
+Host github.com
+        ProxyCommand /usr/bin/nc -x 192.168.150.1:1080 %h %p
